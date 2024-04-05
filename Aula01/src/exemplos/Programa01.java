@@ -4,9 +4,17 @@ public class Programa01 {
 
 	public static void main(String[] args) {
 
-		System.out.println("Hello World!!!");
-		
-		//int: Tipo de dado inteiro
+		// Comentario de uma linha
+		System.out.println("Olá Mundo");
+		System.out.println("Esta é uma segunda mensagem");
+		System.out.println("Linha 3");
+		System.out.println("Linha 4");
+
+		/*
+		 * Comentario de várias linhas! Comentario 1 Comentario 2 Comentario 2
+		 */
+
+		// int: Tipo de dado inteiro
 		int numero;
 		numero = 10;
 		int numero2 = 20;
@@ -14,13 +22,26 @@ public class Programa01 {
 		System.out.println(numero2);
 		numero = 5;
 		System.out.println(numero);
-		
-		//double: Tipo de dado número decimal
+
+		// double: tipo de dado numero decimal
 		double numeroDecimal = 2.99;
-		
+
+		// Tipo cadeia de caracteres
 		String nome = "Thiago";
-		
 		System.out.println(nome);
+
+		// Tipo booleano (apenas dois valores: V ou F)
+		boolean condicao = true;
+		System.out.println(condicao);
+		condicao = false;
+		System.out.println(condicao);
+
+		// Tipo caracter
+		char letra = 'T';
+		letra = 65;
+		System.out.println(letra);
+		letra = 65 + 2;
+		System.out.println(letra);
 
 	}
 

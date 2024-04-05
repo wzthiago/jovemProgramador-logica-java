@@ -1,44 +1,28 @@
 package exemplos;
 
+import java.util.Scanner;
+
 public class Programa02 {
 
 	public static void main(String[] args) {
-		
-		
-		// Concatenação (+)
-		String nome = "Thiago";
-		System.out.println("O nome do aluno é: " +  nome);
-		
-		
-		// Tipos primitivos
-		int numero = 10;
-		Integer num = 10;
-		String num1 = "10";
-		int num2 = Integer.parseInt(num1);		
-		System.out.println(num2 + num); // 20
-		System.out.println(num1 + numero); // 1010
-		
-		
-		String produto = "Teclado";
-		double preco = 50.99;
-		System.out.println("Nome do cliente: " + nome);
-		System.out.println("Produto adquirido: " + produto);
-		System.out.println("Preço unitario do produto: R$" + preco);			
-		System.out.println("Preço unitario do " + produto + ": R$" + preco);
-		
-		String sobreNome = "Souza";
-		System.out.println(nome+  " "+ sobreNome);
-		
-		// printf
-		// %n - quebra de linha
-		// %f - tipo double
-		// %s - tipo String
-		// %d - tipo int
-		
-		preco = 48.254796138547;
-		System.out.printf("O preco do produto é: R$%.2f%n", preco );		
-		System.out.printf("O preco do %s é: R$%.2f%n",produto, preco);
 
+		Scanner entrada = new Scanner(System.in);
+		
+		System.out.println("Digite sua idade: ");
+		int idade = entrada.nextInt();
+		entrada.nextLine();
+
+		System.out.println("Você é estudandte? [s/n]");
+		char estudante = entrada.nextLine().charAt(0);
+
+		if (idade < 18 || estudante == 's') {
+			System.out.println("Paga Meia");
+		} else {
+			System.out.println("Paga inteira");
+		}
+
+			
+		entrada.close();
 
 	}
 

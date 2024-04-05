@@ -1,0 +1,26 @@
+package exemplos;
+
+import java.util.Scanner;
+
+public class Programa02 {
+
+	public static void main(String[] args) {
+
+		Scanner entrada = new Scanner(System.in);
+
+		System.out.println("Digite sua idade: ");
+		int idade = entrada.nextInt();
+		entrada.nextLine();
+
+		System.out.println("Você é estudandte? [s/n]");
+		char estudante = entrada.nextLine().charAt(0);
+
+		if (idade < 18 || estudante == 's') {
+			System.out.println("Paga Meia");
+		} else {
+			System.out.println("Paga inteira");
+		}
+
+	}
+
+}
