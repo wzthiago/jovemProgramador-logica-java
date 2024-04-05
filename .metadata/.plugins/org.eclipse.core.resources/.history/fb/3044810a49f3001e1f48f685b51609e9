@@ -1,0 +1,23 @@
+package exemplos;
+
+import java.util.Random;
+
+public class Programa01 {
+
+	public static void main(String[] args) {
+		
+		Random aleatorio = new Random();
+		
+		//Gerando número aleatório
+		int numero = aleatorio.nextInt();
+		System.out.println("O número gerando foi " + numero);
+		
+		numero = aleatorio.nextInt(100);
+		System.out.println("O número gerando foi " + numero);
+		
+		
+		
+
+	}
+
+}

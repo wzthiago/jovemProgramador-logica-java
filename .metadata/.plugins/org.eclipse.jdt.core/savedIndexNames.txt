@@ -1,0 +1,4 @@
+INDEX VERSION 1.132+C:\Users\thiago.souza8\Documents\jovemProgramador-logica-java\.metadata\.plugins\org.eclipse.jdt.core
+3376472041.index
+978466222.index
+2740675604.index
