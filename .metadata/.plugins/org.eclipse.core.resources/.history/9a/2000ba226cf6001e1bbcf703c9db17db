@@ -1,0 +1,30 @@
+package exemplos;
+
+public class Programa03 {
+
+	public static void main(String[] args) {
+
+		int num1 = 20;
+		int num2 = 10;
+
+		char operacao = '/';
+		double resultado = 0;
+
+		if (operacao == '+') {
+			resultado = num1 + num2;
+		} else if (operacao == '-') {
+			resultado = num1 - num2;
+		} else if (operacao == '/') {
+			// IF aninhado
+			if (num2 != 0) {
+				resultado = num1 / num2;
+			} else {
+				System.out.println("ERRO!!! Divisao por zero!");
+				return;
+			}
+
+		}
+		System.out.println("O resultado é " + resultado);
+
+	}
+}
