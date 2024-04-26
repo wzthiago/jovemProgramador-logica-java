@@ -94,6 +94,7 @@ public class Main {
 	}
 
 	private static void exercicio02() {
+		// TODO Auto-generated method stub
 
 	}
 
@@ -155,6 +156,7 @@ public class Main {
 	}
 
 	private static void exercicio05() {
+		// TODO Auto-generated method stub
 
 	}
 
@@ -164,12 +166,41 @@ public class Main {
 	}
 
 	private static void exercicio07() {
-		// TODO Auto-generated method stub
+		
+		int numero = 0;
 
+		System.out.println("Digite um número para saber seu fatorial");
+		numero = input.nextInt();
+
+		int fatorial = numero;
+
+		for (int count = numero; count > 1; count--) {
+			fatorial = fatorial * (count - 1);
+			System.out.print(count+" x ");
+		}
+		System.out.println("1 = "+fatorial);
+		System.out.println("Número "+numero+", seu fatorial é "+fatorial);
+	
 	}
 
 	private static void exercicio08() {
-		// TODO Auto-generated method stub
+		System.out.println("Digite quantos números você deseja saber se está no intervalo de [10-20]");
+		int numeroTentativas = input.nextInt();
+		int numero1 = 0;
+		int numero2 = 0;
+
+		for (int count = 0; count < numeroTentativas; count++) {
+			System.out.println("Digite o valor:");
+			int valorCapturado = input.nextInt();
+
+			if (valorCapturado >= 10 && valorCapturado <= 20) {
+				numero1++;
+			} else {
+				numero2++;
+			}
+		}
+		System.out.println(numero1 + " on");
+		System.out.println(numero2 + " off");
 
 	}
 
