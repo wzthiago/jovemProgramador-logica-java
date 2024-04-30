@@ -2,7 +2,7 @@ package exemplos;
 
 import java.util.Scanner;
 
-public class programa04 {
+public class Programa05 {
 
 	public static void main(String[] args) {
 
@@ -21,22 +21,29 @@ public class programa04 {
 
 			escolha = input.nextInt();
 
-			if (escolha == 1) { 
+			switch (escolha) {
+			case 1:
 				System.out.println("Pizza adicionada com sucesso");
 				totalConta += 25;
-			} else if (escolha == 2) {
+				break;
+			case 2:
 				System.out.println("Hamburguer adicionada com sucesso");
 				totalConta += 15;
-			} else if (escolha == 3) {
+				break;
+			case 3:
 				System.out.println("Refrigerante adicionada com sucesso");
 				totalConta += 5;
-			} else if (escolha == 4) {
+				break;
+			case 4:
 				System.out.println("Pedido Finalizado!");
 				System.out.println("Total a pagar R$: " + totalConta);
 				break;
-			}else {
-				System.out.println("");
+
+			default:
+				System.out.println("Digite uma opção válida (1, 2, 3, 4)");
+				break;
 			}
 		}
 	}
+
 }

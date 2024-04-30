@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 import javax.xml.transform.Templates;
 
-public class programa06 {
+public class Programa06 {
 
 	public static void main(String[] args) {
 
