@@ -5,4 +5,5 @@
     <fullyQualifiedTypeName name="javax.xml.transform.Templates"/>
     <fullyQualifiedTypeName name="org.w3c.dom.ranges.DocumentRange"/>
     <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
 </qualifiedTypeNameHistroy>
