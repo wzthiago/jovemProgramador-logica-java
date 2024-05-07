@@ -6,22 +6,31 @@ public class Exercicio01 {
 
 	public static void main(String[] args) {
 
-		Scanner input = new Scanner(System.in);
+		byte opcao = 0;
+		Scanner scanner = new Scanner(System.in);
 
 		System.out.println("Digite o tamanho do vetor: ");
-		int tamanhoVetor = input.nextInt();
-		int vetor[] = new int[tamanhoVetor];
+		opcao = scanner.nextByte();
 
-		for (int count = 0; count < vetor.length; count++) {
-			System.out.println("Digite o " + (count + 1) + "ª número: ");
-			vetor[count] = input.nextInt();
+		int vetorInt[] = new int[opcao];
 
+		for (int count = 0; count < vetorInt.length; count++) {
+			System.out.println("Digite a " + (count + 1) + "ª posição do vetor: ");
+			opcao = scanner.nextByte();
+			vetorInt[count] = opcao;
 		}
-		for (int i = 0; i < vetor.length; i++) {
-			if (vetor[i] < 0) {
-				System.out.println(vetor[i]);
+
+		int negativos = 0;
+		for (int i = 0; i < vetorInt.length; i++) {
+			if (vetorInt[i] < 0) {
+				System.out.println(vetorInt[i]);
+				negativos++;
 			}
 		}
+		System.out.println("Quantidade de números negativos: " + negativos);
+		
+		if (negativos == 0) {
+			System.out.println("Não foi inserido nenhum valor negativo");
+		}
 	}
-
 }

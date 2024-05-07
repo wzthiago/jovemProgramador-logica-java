@@ -193,7 +193,7 @@ public class Main {
 		String vetorNomes[] = new String[10];
 		String vetorEmails[] = new String[10];
 
-		for (int i = 0; i < vetorNomes.length; i++) {
+		for (int i = 0; i < quantidadeAlugueis; i++) {
 			vetorNomes[i] = "";
 			vetorEmails[i] = "";
 		}
