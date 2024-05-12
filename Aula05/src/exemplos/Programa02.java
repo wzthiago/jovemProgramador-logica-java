@@ -7,6 +7,9 @@ public class Programa02 {
 				
 		int resultado = Operacoes.multiplicar(2, 5);
 		System.out.println(resultado);
+		
+		int resultado02 = Operacoes.somar(10, 8);
+		System.out.println(resultado);
 	}
 
 }
