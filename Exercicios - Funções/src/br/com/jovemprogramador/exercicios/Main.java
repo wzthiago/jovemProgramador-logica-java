@@ -1,5 +1,6 @@
 package br.com.jovemprogramador.exercicios;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
@@ -62,7 +63,8 @@ public class Main {
 				System.out.println("O fatorial de " + fatorial + ", é: " + resultadoFatorial);
 				break;
 			case 7:
-
+				double notas[] = { 10, 5, 9, 6.5 };
+				System.out.println(funcaoAprovadoReprovado(notas));
 				break;
 
 			default:
@@ -107,7 +109,55 @@ public class Main {
 	}
 
 	private static void gerarSenhaAleatoria() {
-		
+
+		String senhaGerada = "";
+		String simbolos = "";
+
+		String letrasMaiusculas = "ABCDEFGHIJKLMNOPQRSTUVXWYZ";
+		String letrasMinusculas = "abcdefghijklmnopqrstuvxwyz";
+		String numeros = "0123456789";
+		String caracter = "@#%&*";
+
+		System.out.println("Qual o comprimento da senha? ");
+		int comprimento = input.nextInt();
+		input.nextLine();
+
+		System.out.println("Você deseja na " + "senha letras maiusculas? [s/n]");
+		char opcao1 = input.nextLine().charAt(0);
+
+		System.out.println("Você deseja na " + "senha letras minusculas? [s/n]");
+		char opcao2 = input.nextLine().charAt(0);
+
+		System.out.println("Você deseja na " + "senha números? [s/n]");
+		char opcao3 = input.nextLine().charAt(0);
+
+		System.out.println("Você deseja na " + "senha simbolos? [s/n]");
+		char opcao4 = input.nextLine().charAt(0);
+
+		if (opcao1 == 's') {
+			simbolos += letrasMaiusculas;
+		}
+		if (opcao2 == 's') {
+			simbolos += letrasMinusculas;
+		}
+		if (opcao3 == 's') {
+			simbolos += numeros;
+		}
+		if (opcao4 == 's') {
+			simbolos += caracter;
+		}
+
+		System.out.println(simbolos);
+
+		Random aleatorio = new Random();
+		for (int i = 0; i <= comprimento; i++) {
+
+			int posicao = aleatorio.nextInt(0, simbolos.length());
+			senhaGerada += simbolos.charAt(posicao);
+
+		}
+
+		System.out.println("Senha gerada: " + senhaGerada);
 
 	}
 
@@ -134,6 +184,23 @@ public class Main {
 			calcular *= i;
 		}
 		return calcular;
+	}
+
+	private static String funcaoAprovadoReprovado(double[] notas) {
+
+		double calcularMedia = 0;
+		for (int count = 0; count < notas.length; count++) {
+			calcularMedia += notas[count];
+
+		}
+		calcularMedia = calcularMedia / notas.length;
+		if (calcularMedia >= 6) {
+			System.out.println("Média das notas: " + calcularMedia);
+			return "Aluno APROVADO";
+		} else {
+			System.out.println("Média das notas: " + calcularMedia);
+			return "Aluno REPROVADO";
+		}
 	}
 
 }
