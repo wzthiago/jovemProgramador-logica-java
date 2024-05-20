@@ -71,7 +71,7 @@ public class Programa01 {
 		listaNomes02.add("Teste");
 		listaNomes02.add("Testando");
 		
-		// Juntando em uma lista 
+		// Juntando em uma lista só
 		listaNomes.addAll(listaNomes02);
 		System.out.println(listaNomes);
 		
