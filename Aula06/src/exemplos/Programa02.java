@@ -28,8 +28,7 @@ public class Programa02 {
 		
 		for (int i  = 0; i < vetorDeListas.length; i++) {
 			char letra =  ((char) ('A' + i));
-			System.out.println("Nomes da letra "
-			+ letra + " : " + vetorDeListas[i]);			
+			System.out.println("Nomes da letra "+ letra + " : " + vetorDeListas[i]);			
 		}
 		
 		
