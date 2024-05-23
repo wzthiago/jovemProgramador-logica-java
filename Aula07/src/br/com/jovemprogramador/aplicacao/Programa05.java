@@ -1,4 +1,4 @@
-package aplicacao;
+package br.com.jovemprogramador.aplicacao;
 
 import java.util.Scanner;
 
@@ -17,12 +17,12 @@ public class Programa05 {
 		System.out.println("Digite a idade:");
 		int idade = input.nextInt();
 		System.out.println("Digite o Peso:");
-		double peso =  input.nextDouble();
+		double peso = input.nextDouble();
 		
 		Pessoa pessoa =  new Pessoa(nome, altura, idade, peso);
 		System.out.println(pessoa);
 		pessoa.calcularImc(peso, altura);
-		System.out.println(pessoa.maiorDeIdade(idade));
+		System.out.println("É maior de idade? --> " + pessoa.maiorDeIdade(idade));
 		
 		
 		

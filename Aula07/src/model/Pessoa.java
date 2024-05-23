@@ -7,6 +7,10 @@ public class Pessoa {
 	private int idade;
 	private double peso;
 
+	public Pessoa() {
+		
+	}
+	
 	public Pessoa(String nome, double altura, int idade, double peso) {
 		this.nome = nome;
 		this.altura = altura;

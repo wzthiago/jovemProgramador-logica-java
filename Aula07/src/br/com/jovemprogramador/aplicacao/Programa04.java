@@ -1,4 +1,4 @@
-package aplicacao;
+package br.com.jovemprogramador.aplicacao;
 
 import model.Produto;
 
