@@ -12,7 +12,9 @@
     <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="model.Produto"/>
     <fullyQualifiedTypeName name="model.Pessoa"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="br.com.jovemprogramador.model.Funcionario"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="br.com.jovemprogramador.model.Aluguel"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="br.com.jovemprogramador.model.Funcionario02"/>
 </qualifiedTypeNameHistroy>
