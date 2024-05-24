@@ -72,13 +72,6 @@ public class Pessoa {
 
 	}
 
-	public String listarPessoas(){
-		String imprimir = "Lista atualizada de Pessoas: ";
-		imprimir += "";
-		
-		return imprimir;
-	}
-
 	@Override
 	public String toString() {
 		return "Pessoa [nome=" + nome + ", idade=" + idade + ", altura=" + altura + "]";

@@ -35,6 +35,8 @@ public class Desafio01 {
 			}
 
 		}
+		Funcionario funcionario = new Funcionario();
+		funcionario.listaFuncionario();
 
 		System.out.println("Informe o ID do funcionário que terá aumento salarial: ");
 		int idAumento = input.nextInt();
@@ -54,11 +56,9 @@ public class Desafio01 {
 			funcAumento.aumentarSalario(aumento);
 		}
 
-		Funcionario funcionario = new Funcionario();
+		
 		funcionario.listaFuncionario();
-
-		// Funcionario funcionario = new Funcionario(id, nome, salario);
-		// funcionarios.add(funcionario);
+		
+				
+		}
 	}
-
-}

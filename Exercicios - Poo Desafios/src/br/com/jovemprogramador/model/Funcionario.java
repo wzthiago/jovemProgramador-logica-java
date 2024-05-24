@@ -79,7 +79,7 @@ public class Funcionario {
 
 	public void listaFuncionario() {
 		for (Funcionario funcionario : funcionarios) {
-			System.out.println(funcionario);
+			System.out.println("Id: "+ funcionario.getId()+"\nNome: "+funcionario.getNome()+"\nSalario: "+funcionario.getSalario()+"\n");
 		}
 	}
 	

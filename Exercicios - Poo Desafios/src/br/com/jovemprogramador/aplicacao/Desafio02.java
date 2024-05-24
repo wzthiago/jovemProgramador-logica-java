@@ -28,11 +28,16 @@ public class Desafio02 {
 			Pessoa pessoa = new Pessoa(nome, idade, altura);
 			pessoas.add(pessoa);
 		}
+		
+		System.out.println("Pessoas Cadastradas: ");
+		for (Pessoa p : pessoas) {
+			System.out.println("\nNome: "+p.getNome()+"\nIdade: "+p.getIdade()+"\nAltura: "+p.getAltura()+"\n");
+		}
 		Pessoa pessoa = new Pessoa();
-		System.out.println(pessoas);
 		System.out.printf("Altura média: %.2f metros\n", pessoa.mediaAltura(pessoas));
 		pessoa.menorDezesseis(pessoas);
-		System.out.println(pessoas);
+		System.out.println(pessoas);		
+		
 
 	}
 }
