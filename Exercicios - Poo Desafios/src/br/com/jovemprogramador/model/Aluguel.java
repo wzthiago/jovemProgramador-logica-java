@@ -4,7 +4,7 @@ public class Aluguel {
 
 	private int [] quartos;
 	private String nome;
-	private String email;
+	//private String email;
 	
 	
 	
