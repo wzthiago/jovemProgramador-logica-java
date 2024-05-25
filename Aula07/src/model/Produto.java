@@ -10,6 +10,8 @@ public class Produto {
 		this.nome = nome;
 		this.preco = preco;
 		this.quantidade = quantidade;
+		
+		System.out.println("OBJETO CRIADO COM SUCESSO");
 	}
 
 	public String getNome() {

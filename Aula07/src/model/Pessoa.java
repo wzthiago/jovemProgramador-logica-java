@@ -8,9 +8,9 @@ public class Pessoa {
 	private double peso;
 
 	public Pessoa() {
-		
+
 	}
-	
+
 	public Pessoa(String nome, double altura, int idade, double peso) {
 		this.nome = nome;
 		this.altura = altura;
@@ -50,24 +50,20 @@ public class Pessoa {
 		this.peso = peso;
 	}
 
-	public void calcularImc(double peso, double altura) {
-		double calcularImc = peso / (altura * altura);
-		System.out.println("Calculo IMC: " +calcularImc);
+	public double calcularIMC() {
+		return peso / (altura * altura);
 	}
 
-	public boolean maiorDeIdade(int idade) {
-		if (idade < 18) {
-			return false;
-		} else {
+	public boolean ehMaiorDeIdade() {
+		if (idade >= 16) {
 			return true;
 		}
+		return false;
 	}
 
 	@Override
 	public String toString() {
 		return "Pessoa [nome=" + nome + ", altura=" + altura + ", idade=" + idade + ", peso=" + peso + "]";
 	}
-	
-	
 
 }

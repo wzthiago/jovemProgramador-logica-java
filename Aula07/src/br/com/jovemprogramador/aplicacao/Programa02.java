@@ -16,6 +16,7 @@ public class Programa02 {
 		double c = input.nextDouble();
 
 		Triangulo trianguloX = new Triangulo();
+		
 		trianguloX.ladoA = a;
 		trianguloX.ladoB = b;
 		trianguloX.ladoC = c;
