@@ -1,36 +1,53 @@
 package br.com.jovemprogramador.aplicacao;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
-import br.com.jovemprogramador.model.Aluguel;
+import br.com.jovemprogramador.model.Estudante;
 
 public class Desafio03 {
 
 	public static void main(String[] args) {
 
-		List<Aluguel> alugueis = new ArrayList<>();
+		Estudante quartos[] = new Estudante[10];
 		Scanner input = new Scanner(System.in);
+
 		System.out.println("Quantos quartos deseja alugar? ");
 		int quantidadeAlugueis = input.nextInt();
+		input.nextLine();
 
 		for (int i = 0; i < quantidadeAlugueis; i++) {
 
-			System.out.println("Digite o nome do estudante: ");
+			System.out.println("Aluguel #" + (i + 1));
+			System.out.print("Digite o nome do estudante: ");
 			String nome = input.next();
-			System.out.println("Digte o e-mail: ");
+			System.out.print("Digte o e-mail: ");
 			String email = input.next();
 
-			System.out.println("Qual quarto deseja alugar: ");
-			int quarto = input.nextInt();
+			int quarto;
 
-			Aluguel aluguel = new Aluguel(nome, email, quarto);
-			alugueis.add(aluguel);
+			while (true) {
+				System.out.println("Quarto de 0 a 9");
+				System.out.println("Qual quarto deseja alugar: ");
+				quarto = input.nextInt();
+
+				if (quarto < 0 || quarto > 9) {
+					System.out.println("Número do quarto Inválido. Tente novamente");
+				} else if (quartos[quarto] != null) {
+					System.out.println("O Quarto " + quarto + " , já está ocupado, tente novamente");
+				} else {
+					break;
+
+				}
+			}
+			quartos[quarto] = new Estudante(nome, email);
+
 		}
 
-		for (Aluguel aluguel : alugueis) {
-			System.out.println("Quarto: " + aluguel.getQuartos());
+		System.out.println("Quartos Ocupados: ");
+		for (int i = 0; i < quartos.length; i++) {
+			if (quartos[i] != null) {
+				System.out.println("Quarto " + i + " --> " + quartos[i]);
+			}
 		}
 	}
 

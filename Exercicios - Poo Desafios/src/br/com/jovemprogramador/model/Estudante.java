@@ -3,20 +3,18 @@ package br.com.jovemprogramador.model;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Aluguel {
+public class Estudante {
 
 	private String nome;
 	private String email;
-	private int quartos;
-		
-	public Aluguel() {
+
+	public Estudante() {
 	}
 
-	public Aluguel(String nome, String email, int quartos) {
+	public Estudante(String nome, String email) {
 		super();
 		this.nome = nome;
 		this.email = email;
-		this.quartos = quartos;
 	}
 
 	public String getNome() {
@@ -35,12 +33,8 @@ public class Aluguel {
 		this.email = email;
 	}
 
-	public int getQuartos() {
-		return quartos;
+	@Override
+	public String toString() {
+		return "Aluguel [nome=" + nome + ", email=" + email+ "]";
 	}
-
-	public void setQuartos(int quartos) {
-		this.quartos = quartos;
-	}
-	
 }
